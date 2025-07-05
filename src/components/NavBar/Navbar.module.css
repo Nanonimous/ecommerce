@@ -1,0 +1,198 @@
+.mainContainer {
+  width: 100%;
+  padding: 2em 3.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  position: sticky;
+  top: 0;/* Ensure the main container is a positioning context */
+  z-index: 100;
+}
+
+.logo {
+  width: 50px;
+}
+
+.logoTitle {
+  font-size: 1.9em;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 100; /* Ensure hamburger is above other elements */
+}
+
+/* Nav Links */
+.linkdSection {
+  display: flex;
+  align-items: center;
+  gap: 4.5em;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.text {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.text:hover {
+  color: #b88e2f;
+}
+
+/* Icons */
+.accessibilitiesSection {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+}
+
+.accessibilitiesSection img {
+  width: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.accessibilitiesSection img:hover {
+  transform: scale(1.1);
+}
+
+/* === Responsive for Mobile === */
+@media (max-width: 1024px) {
+.linkdSection {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.accessibilitiesSection {
+  display: flex;
+  gap: 1.7em;
+  align-items: center;
+}
+}
+@media (max-width:800px) {
+
+    .logo {
+    width: 40px;
+  }
+
+  .logoTitle {
+    font-size: 1.5em;
+  }
+.linkdSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.accessibilitiesSection {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+}
+
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 1.5em;
+ /* Adjust top position to align with logo */
+    z-index: 100;
+  }
+
+  .logo {
+    width: 35px;
+  }
+
+  .logoTitle {
+    font-size: 1em;
+  }
+
+  .linkdSection {
+    margin-right: 26%;
+  }
+
+  .accessibilitiesSection {
+    display: none; /* Hidden by default on mobile */
+    flex-direction: row;
+    gap: 1em;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em 0;
+    background-color: #fff; /* Optional: Add background for clarity */
+  }
+
+  .showMenu {
+    display: flex !important; /* Show when menu is toggled */
+  }
+}
+
+@media (max-width:660px) {
+
+.linkdSection {
+margin-right:20%;
+gap: 1em;
+}
+
+}
+
+@media (max-width:590px) {
+
+  .linkdSection {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin-top: 4em; /* Ensure enough space for hamburger */
+    padding: 1em 0;
+    background-color: #fff;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+
+  .accessibilitiesSection {
+    display: none;
+    flex-direction: row;
+    gap: 1em;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em 0;
+
+  }
+
+  .showMenu {
+    display: flex !important;
+  }
+}

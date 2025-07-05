@@ -1,0 +1,140 @@
+.mainContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.mainImage {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.overImage{
+  background-color: #FFF3E3;
+  position: absolute;
+   transform: translate(4%, -30%);
+  max-width: 670px;
+  top: 35%;
+  left: 50%;
+  padding: 4em 3em;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.buyButton {
+  background-color: #B88E2F;
+  color: white;
+  border: none;
+  padding: 1.5em;
+  width: 100%;
+  max-width: 250px;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textContent h3 {
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+.textContent h1 {
+  font-size: 48px;
+  color: #B88E2F;
+  line-height: 60px;
+}
+
+.textContent p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .overImage {
+    width: 75%;
+    padding: 3em 2em;
+  }
+
+  .textContent h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .textContent p {
+    font-size: 16px;
+  }
+
+  .buyButton {
+    font-size: 0.9em;
+    padding: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .overImage {
+    width: 85%;
+    padding: 2em 1.5em;
+    top: 40%;
+  }
+
+  .textContent h3 {
+    font-size: 12px;
+  }
+
+  .textContent h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .textContent p {
+    font-size: 14px;
+  }
+
+  .buyButton {
+    font-size: 0.8em;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .overImage {
+    width: 90%;
+    padding: 1.5em 1em;
+    top: 45%;
+  }
+
+  .textContent h3 {
+    font-size: 10px;
+  }
+
+  .textContent h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .textContent p {
+    font-size: 12px;
+  }
+
+  .buyButton {
+    font-size: 0.7em;
+    padding: 0.8em;
+  }
+}
