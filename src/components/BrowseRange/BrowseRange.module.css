@@ -1,0 +1,46 @@
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  padding: 3em;
+}
+.title{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  gap: 6px;
+}
+
+.title p{
+  color: #666666;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dining{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2.5em;
+  border-radius: 7px;
+
+}
+
+.dining h3 {
+  font-weight: 600;
+  color: #333333;
+  font-size: 24px;
+}
