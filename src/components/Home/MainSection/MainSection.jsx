@@ -1,7 +1,7 @@
 import React from "react"
 
 import ms from './MainSection.module.css'
-import mainImage from '../../assets/mainContainer/main.jpg'
+import mainImage from '../../../assets/mainContainer/main.jpg'
 export default function MainSection(){
   return (
     <>

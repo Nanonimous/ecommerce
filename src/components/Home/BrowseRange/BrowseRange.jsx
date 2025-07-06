@@ -1,7 +1,7 @@
 import React from "react";
 import br from './BrowseRange.module.css';
 
-import din from "../../assets/BrowseRange/living.png";
+import din from "../../../assets/BrowseRange/living.png";
 export default function BrowseRange(){
   return(
     <>
