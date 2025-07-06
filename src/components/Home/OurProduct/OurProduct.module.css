@@ -18,5 +18,7 @@
 .Card_continer{
     display:grid;
     align-items: center;
+    justify-content: center;
+    gap: 2em;
     grid-template-columns: repeat(4,1fr);
 }

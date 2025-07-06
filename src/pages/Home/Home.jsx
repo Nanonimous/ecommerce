@@ -12,6 +12,7 @@ export default function Home() {
         <Navbar/>
         <MainSection/>
         <BrowseRange/>
+        <OurProduct/>
         <Footer/>
         </>
     )
