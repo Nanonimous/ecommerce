@@ -1,2 +1,22 @@
 
 
+.product_component{
+    padding : 2% 8%;
+    
+}
+
+
+.title{
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    color: #3A3A3A;
+    margin:1.5%;
+    font-size: 1.2em;
+}
+
+.Card_continer{
+    display:grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+}
